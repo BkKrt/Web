@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Kayıt Formu</title>
+	<style>
+            .form-container {
+                width: 50%; 
+                margin: 0 auto; 
+                background-color:rgba(161, 160, 160, 0.425); 
+                padding: 20px; 
+                border-radius: 5px;
+            }
+		    form {
+                padding: 30px;
+                border: 3px solid #070707;
+                border-radius: 10px;
+            }
+
+        </style>
+</head>
+<body>
+	<div class="form-container">
+	 	<h2>Öğrenci Kayıt Formu</h2>
+		<form>
+            <label for="fname">Adı:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Soyadı:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">E-posta:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="telefon">Telefon:</label><br>
+            <input type="telefon" id="telefon" name="telefon"><br>
+            <label for="Tc">Tc kimlik numarası:</label><br>
+            <input type="Tc" id="Tc" name="Tc"><br>
+            <label for="cinsiyet">Cinsiyet:</label><br>
+            <select id="cinsiyet" name="cinsiyet" >
+                <option value="">Seçiniz</option>
+                <option value="erkek">Erkek</option>
+                <option value="kadin">Kadın</option>
+            </select><br>
+            <label for="dogum_tarihi">Doğum Tarihi:</label><br>
+            <input type="date" id="dogum_tarihi" name="dogum_tarihi" ><br>
+            <label for="Doğum yeri">Doğum yeri:</label><br>
+            <input type="Doğum yeri" id="Doğum yeri" name="Doğum yeri"><br>
+			<label for="İngilizce Seviyesi">İngilizce seviyesi:</label><br>
+            <select id="İngilizce seviyesi" name="İngilizce seviyesi" ><br>
+                <option value="">Seçiniz</option>
+                <option value="erkek">A1</option>
+                <option value="kadin">A2</option>
+				<option value="kadin">B1</option>
+                <option value="kadin">B2</option>
+                <option value="kadin">C1</option>
+                <option value="kadin">C2</option>
+			</select><br>
+            <label for="adres">Adres:</label><br>
+            <textarea id="adres" name="adres" rows="4"></textarea><br>
+			<label for="resim">Öğrenci Resmi:</label><br>
+            <input type="file" id="resim" name="resim"><br>
+			<input type="submit" value="Kaydet">
+        </form>
+    </div>
+</body>
+</html>
